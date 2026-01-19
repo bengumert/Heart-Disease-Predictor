@@ -1,0 +1,46 @@
+HİPERPARAMETRE OPTİMIZASYONU SONUÇLARI
+En İyi Model (önceki seçim): Gradient Boosting
+Optimizasyon Yöntemi: Grid Search CV
+
+En İyi Hiperparametreler (Random Forest):
+  max_depth: 30
+  max_features: sqrt
+  min_samples_leaf: 4
+  min_samples_split: 10
+  n_estimators: 50
+
+Optimizasyon Yöntemi: Randomized Search CV
+
+En İyi Hiperparametreler (Gradient Boosting):
+  subsample: 0.9
+  n_estimators: 100
+  min_samples_split: 5
+  min_samples_leaf: 4
+  max_depth: 7
+  learning_rate: 0.05
+
+================================================================================
+PERFORMANS KARŞILAŞTIRMASI
+================================================================================
+
+  Metrik   Öncesi  Sonrası  İyileşme (%)
+Accuracy 0.733528 0.494418    -23.910981
+F1-Score 0.719034 0.661686     -5.734726
+
+================================================================================
+ÖZELLİK ÖNEMLERİ
+================================================================================
+
+       Özellik     Önem
+         ap_hi 0.229365
+         ap_lo 0.151074
+     age_years 0.148422
+        weight 0.128022
+pulse_pressure 0.115489
+        height 0.103710
+   cholesterol 0.067951
+          gluc 0.016226
+        active 0.013540
+        gender 0.013442
+         smoke 0.007284
+          alco 0.005475
